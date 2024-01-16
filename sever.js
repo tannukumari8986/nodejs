@@ -5,7 +5,9 @@ server = http.createServer((req,res) => {
 
     
     res.writeHead(200, {"Content-Type":"text/html"})
-     res.end(req.url)
+     //res.end(req.url)
+     if(req.url === '/'){res.end('./index.html')}
+     if(req.url === '/home'){res.end('home page')}
 })
 
 server.listen(3000, ()=>{console.log('server running')})
