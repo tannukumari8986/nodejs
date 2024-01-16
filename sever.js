@@ -1,12 +1,11 @@
-const { json } = require('stream/consumers')
-
 http = require('node:http')
-
+fs = require('node:fs')
 server = http.createServer((req,res) => {
+    html =fs.readFileSync('./index.html', 'utf-8')
 
-    data ={name:"tannu",location:"patna"}
-    res.writeHead(200, {"Content-Type":"application/json"})
-     res.end(JSON.stringify(data))
+    
+    res.writeHead(200, {"Content-Type":"text/html"})
+     res.end(html)
 })
 
 server.listen(3000, ()=>{console.log('server running')})
