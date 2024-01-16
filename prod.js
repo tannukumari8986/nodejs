@@ -2,4 +2,4 @@ prod = (a,b) => {
     return a*b
 }
 
-module.exports =  prod
+module.exports = prod
