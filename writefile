@@ -1,7 +1,7 @@
 fs= require('node:fs')
 //fs.writeFileSync('./b.txt', 'emiriii')
 
-fs.writeFile('./b.txt', 'tannnuuuuu smritiii',{flag: "a"}, (error) =>{
+fs.writeFile('./b.txt', 'tannnuuu smritiiiiiii',{flag: "a"}, (error) =>{
     if(error){console.log(error)}
-    else{console.log('written')}
+    else{console.log('writtennnnnnn')}
 })

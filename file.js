@@ -8,5 +8,5 @@ a.readFile('./a.txt', 'utf-8', (error, data) =>{
 })
 console.log('smritiiyaaaaaa')
 console.log('yaaaaaa')
-console.log('tiiyaaaaaa')
+console.log('tiiyaaaaaaaaaaaaaa')
 console.log('mritiiyaaaaaa')
